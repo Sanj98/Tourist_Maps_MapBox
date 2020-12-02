@@ -1,0 +1,191 @@
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: rgb(64, 164, 231);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: verdana;
+  cursor: pointer;
+}
+.button2 {
+background-color: #3396ce;
+color: white;
+border: 2px solid black;
+border-radius: 25px
+}
+.button2:hover {
+background-color: rgb(8, 69, 110);
+color: white;
+}
+.danger {
+background-color: #ffdddd;
+border-left: 6px solid #f44336;
+margin-bottom: 15px;
+height: 100px;
+position: relative;
+bottom: 83px;
+right: 8px;
+font-family: verdana;
+font-size: 12px;
+line-height: 18px;
+}
+
+#instructions  {
+position: relative;
+top: 5px;
+margin-left: auto;
+margin-right: auto;
+width: 500px;
+}
+
+#melb-logo  {
+float: left;
+position: relative;
+height: 80px;
+left: 5px;
+top: 10px;
+padding-right: 100px;
+}
+
+h2  {
+font-size: 40px;
+position: relative;
+right: 185px;
+top: 20px;
+font-family: verdana;
+color: white;
+font-weight: 600;
+}
+
+#top-bar  {
+background-color: #23242b;
+width: 100%;
+height: 100px;
+position: relative;
+bottom: 33px;
+right: 8px;
+}
+
+#second-bar  {
+width: 100%;
+height: 65px;
+background-color: #36394b;
+position: relative;
+bottom: 52px;
+right: 8px;
+}
+
+#third-bar  {
+width: 100%;
+background-color: #414d9b;
+position: relative;
+bottom: 71px;
+right: 8px;
+}
+
+#filter {
+position: relative;
+top: 10px;
+padding-bottom: 10px;
+font-family: verdana;
+color: white;
+font-weight: 500;
+}
+
+h3 {
+position: relative;
+top: 20px;
+font-family: verdana;
+color: white;
+font-weight: lighter;
+}
+
+#legend-title  {
+text-align: center;
+padding-top: 12px;
+height: 25px;
+position: relative;
+bottom: 22px;
+right: 1px;
+background-color: blue;
+color: white;
+width: 232px;
+border-bottom: solid;
+border-color: black;
+border-weight: 2px;
+}
+
+#legend {
+background-color: white;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+width: 230px;
+height: 180px;
+font-family: verdana;
+line-height: 10px;
+text-align: left;
+display: inline-block;
+margin-left: auto;
+position: relative;
+bottom: 80px;
+right: 500px;
+}
+
+#legend-text  {
+position: relative;
+bottom: 30px;
+left: 35px;
+}
+
+.circle  {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+background-color: black;
+float: left;
+margin-right: 10px;
+margin-left: -25px;
+}
+
+#blue  {
+background-color: #486DE0;
+}
+
+#red  {
+background-color: red;
+height: 15px;
+width: 15px;
+position: relative;
+bottom: 2px;
+right: 2px;
+}
+
+#purple  {
+background-color: purple;
+height: 15px;
+width: 15px;
+position: relative;
+bottom: 2px;
+right: 2px;
+}
+
+#metro-icon  {
+height: 20px;
+float: left;
+margin-right: -20px;
+position: relative;
+right: 29px;
+bottom: 5px;
+}
+
+#showIframe  {
+  position: relative;
+  bottom: 285px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}

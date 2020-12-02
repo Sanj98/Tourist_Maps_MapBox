@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Melbourne Tourist Maps</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" href="tourist.css">
+</head>
+<body>
+    <!City of Melbourne bar>
+    <div id="top-bar">
+      <!Image retrieved from: https://www.melbourne.vic.gov.au/about-melbourne/for-visitors/Pages/for-visitors.aspx>
+      <img id="melb-logo" src="melb-logo.jpg">
+      <center><h2>Tourist Maps</h2></center>
+    </div>
+    <!Welcome bar>
+    <div id="second-bar">
+      <center><h3>Welcome to Melbourne! You can use our interactive maps to find points of interest and public transport information!</h3></center>
+    </div>
+    <!Container for filter buttons>
+    <div id="third-bar">
+      <center><h3 id='filter'>Please select how you would like to filter the points of interest:</h3></center>
+      <div style = "text-align: center;">
+          <!Buttons and functions to display maps>
+          <button class="button button2" id="age" class="float-left submit-button" onclick="displayMap1()">by Age</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="button button2" id="duration" class="float-left submit-button" onclick="displayMap2()">by Duration</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="button button2" id="time" class="float-left submit-button" onclick="displayMap3()">by Time of Day</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="button button2" id="theme" class="float-left submit-button" onclick="displayMap4()">by Theme</button>
+      </div><br>
+    </div>
+    <!Container for instructions bar>
+    <div class="danger">
+      <!Instructions>
+      <div id="instructions">
+        <p><b>Select</b> from the options in the top-right corner according to your preference.<br>
+        <b>Hover</b> over a Point of Interest for additional information.<br>
+        <b>Click</b> on a Point of Interest to highlight the nearest tram stop and train station.<br>
+        <b>Hover</b> over a Tram Stop for its name and route/s.<br>
+        <b>Hover</b> over a Train Station for its name.<br></p>
+      </div>
+    </div>
+    <center>
+      <!Container for legend and maps>
+      <div id="map">
+        <!Legend>
+        <div id="legend">
+          <h4 id="legend-title">Legend</h4>
+          <div id="legend-text"><div class="circle" id="blue"></div><p>Point of Interest</p>
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Melbourne_tram_logo.svg/960px-Melbourne_tram_logo.svg.png" id='metro-icon'><p>Tram Stop</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Metro_icon_white_and_blue_background.svg/1200px-Metro_icon_white_and_blue_background.svg.png" id='metro-icon'><p>Train Station</p>
+          <div class="circle" id="red"></div><p>Nearest Tram Stop</p>
+          <div class="circle" id="purple"></div><p>Nearest Train Station</p>
+          </div>
+        </div>
+        <!Maps>
+        <div id="showIframe"></div>
+      </div>
+    </center>
+
+    <!Display various maps using iframes>
+    <script type="text/javascript">
+        function displayMap1(){
+            document.getElementById("showIframe").innerHTML = "<iframe style=\"height:600px; width:700px;\" src=\"Age_Category_Map.html\"></iframe>";
+        }
+        function displayMap2(){
+            document.getElementById("showIframe").innerHTML = "<iframe style=\"height:600px; width:700px;\" src=\"Duration_Map.html\"></iframe>";
+        }
+        function displayMap3(){
+            document.getElementById("showIframe").innerHTML = "<iframe style=\"height:600px; width:700px;\" src=\"Time_of_Day_Map.html\"></iframe>";
+        }
+        function displayMap4(){
+            document.getElementById("showIframe").innerHTML = "<iframe style=\"height:600px; width:700px;\" src=\"Theme_Map.html\"></iframe>";
+        }
+    </script>
+</body>
+</html>
